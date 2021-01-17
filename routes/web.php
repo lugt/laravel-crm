@@ -29,3 +29,5 @@ require __DIR__.'/auth.php';
 Route::resource('suppliers', 'App\Http\Controllers\SupplierController');
 Route::resource('customers', 'App\Http\Controllers\CustomerController');
 
+Route::resource('product','App\Http\Controllers\ProductController');
+
