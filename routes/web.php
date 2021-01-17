@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\SupplierController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +20,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-use App\Http\Controllers\UserController;
-Route::get('/user/{id}', [UserController::class, 'show']);
-Route::resource('customers','CustomerController');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+Route::resource('suppliers', 'App\Http\Controllers\SupplierController');
+Route::resource('customers', 'App\Http\Controllers\CustomerController');
 

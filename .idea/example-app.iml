@@ -116,6 +116,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/crestapps/laravel-code-generator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/digitaldream/laracrud" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/digitaldream/dbreader" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/breeze" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

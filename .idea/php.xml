@@ -111,6 +111,7 @@
       <path value="$PROJECT_DIR$/vendor/crestapps/laravel-code-generator" />
       <path value="$PROJECT_DIR$/vendor/digitaldream/laracrud" />
       <path value="$PROJECT_DIR$/vendor/digitaldream/dbreader" />
+      <path value="$PROJECT_DIR$/vendor/laravel/breeze" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3">
