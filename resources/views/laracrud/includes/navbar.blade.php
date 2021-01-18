@@ -10,7 +10,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                <i class="text-info fa fa-home"></i> {{ config('app.name', 'Laravel') }}
+                <i class="text-info fa fa-home"></i> {{ config('app.name', 'DB Course Final Project') }}
             </a>
         </div>
 
@@ -31,8 +31,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown" role="button"
                            aria-expanded="false">
-                           Your Name
-                            (Your Role)
+                           Logged in
+                            (Employee)
                             <span class="caret"></span>
                         </a>
 

@@ -2,11 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\CustomerController;
-use App\Http\Controllers\SupplierController;
 
-/*
-|--------------------------------------------------------------------------
+/*|--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
@@ -26,8 +23,15 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::resource('suppliers', 'App\Http\Controllers\SupplierController');
-Route::resource('customers', 'App\Http\Controllers\CustomerController');
+Route::resource('suppliers','App\Http\Controllers\SupplierController');
 
-Route::resource('product','App\Http\Controllers\ProductController');
+Route::resource('customers','App\Http\Controllers\CustomerController');
+
+Route::resource('products','App\Http\Controllers\ProductController');
+
+Route::resource('logs','App\Http\Controllers\LogController');
+
+Route::resource('employees','App\Http\Controllers\EmployeeController');
+
+Route::resource('purchases','App\Http\Controllers\PurchaseController');
 

@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'DB Course Final Project') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('laracrud/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -27,7 +27,7 @@
     @if(auth()->check())
         <nav aria-label="breadcrumb" role="navigation" class="container">
             <ol class="breadcrumb mb-1" style="font-size: 14px;font-weight: 400;margin: auto">
-                <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Home</a></li>
                 @yield('breadcrumb')
                 @if(!empty(request('q')))
                     <li class="breadcrumb-item">
